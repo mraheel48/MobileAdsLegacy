@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Adaptive Banners"
+        app:layout_constraintBottom_toTopOf="@+id/btnInterstitialAd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInterstitialAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="InterstitialAd"
+        app:layout_constraintBottom_toTopOf="@+id/nativeAdvanced"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+    <Button
+        android:id="@+id/nativeAdvanced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Native Advanced"
+        app:layout_constraintBottom_toTopOf="@+id/rewardedVideo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInterstitialAd" />
+
+    <Button
+        android:id="@+id/rewardedVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rewarded Video"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nativeAdvanced" />
+</androidx.constraintlayout.widget.ConstraintLayout>
